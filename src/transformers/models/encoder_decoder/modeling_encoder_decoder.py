@@ -425,7 +425,7 @@ class EncoderDecoderModel(PreTrainedModel):
             output_attentions=output_attentions,
             output_hidden_states=output_hidden_states,
             #use_cache=use_cache,
-            past_key_values=past_key_values,
+            #past_key_values=past_key_values,
             return_dict=return_dict,
             **kwargs_decoder,
         )
