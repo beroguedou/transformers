@@ -427,9 +427,16 @@ class EncoderDecoderModel(PreTrainedModel):
             #use_cache=use_cache,
             #past_key_values=past_key_values,
             return_dict=return_dict,
-            **kwargs_decoder,
+            #**kwargs_decoder,
         )
+######
 
+       
+        #token_type_ids=None,
+        #position_ids=None,
+        #head_mask=None,
+
+######
         if not return_dict:
             return decoder_outputs + encoder_outputs
 
